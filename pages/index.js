@@ -1,7 +1,21 @@
-import Head from "next/head"
-import Image from "next/image"
-import styles from "../styles/Home.module.css"
+import { getJsonData } from "../utils/tools"
+import Carousel from "../components/ui/carousel"
 
-export default function Home() {
-  return <div className={styles.container}>This is the Home Page!</div>
+const Home = ({ data }) => {
+  return (
+    <>
+      <Carousel data={data.carousel} />
+    </>
+  )
 }
+
+export const getStaticProps = async () => {
+  const data = await getJsonData()
+  return {
+    props: {
+      data: data,
+    },
+  }
+}
+
+export default Home

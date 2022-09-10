@@ -27,7 +27,7 @@ a {
 }
 
 
-/*////// CARROUSEL /////////*/
+/*////// CAROUSEL /////////*/
 header {
   margin-bottom: 20px;
   background-color: #121751;
@@ -50,17 +50,17 @@ header a:hover {
   text-decoration: none;
 }
 
-/*////// CARROUSEL /////////*/
+/*////// carousel /////////*/
 
 
-.carrousel_wrapper {
+.carousel_wrapper {
   height:500px;
   background-size: cover !important;
   position: relative;
   margin-bottom: 20px;
 }
 
-.carrousel_wrapper div {
+.carousel_wrapper div {
   position: absolute;
   bottom: 30px;
   left: 30px;
